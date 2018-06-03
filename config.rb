@@ -9,8 +9,8 @@ fonts_dir = "fonts"
 
 
 
-output_style = :compressed
-# output_style = :compact
+# output_style = :compressed
+output_style = :compact
 # output_style = :nested
 # output_style = :expanded
 
