@@ -1,0 +1,131 @@
+// override foundation navbar style
+.top-bar {
+  padding: 0 rem-calc(100, 16);
+  box-shadow: 0px 5px 5px #e0e0e0;
+  .top-bar-left {
+    li,
+    li a {
+      padding: 0;
+    }
+  }
+  .top-bar-right {
+    .dropdown.menu a {
+      padding: 2.5rem 1.5rem;
+      color: $sa-text-color;
+      position: relative;
+      text-transform: uppercase;
+      &.active,
+      &:hover {
+        background-color: $sa-main-color;
+        color: $white;
+      }
+      &:after {
+        content: '';
+        height: 96px;
+        width: 2px;
+        border: 1px solid #c5c5c4;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+// sa-thumbnail-section
+.sa-thumbnail-section {
+  padding: 5rem 3.5rem;
+  background-color: $sa_body_bg;
+  .sa-thumbnail-wrapper {
+    position: relative;
+    cursor: pointer;
+    .sa-thumbnail-img {
+      width: 100%
+    }
+    .sa-thumbnail-text {
+      position: absolute;
+      top: 0;
+      background: #2e74bfcf;
+      text-align: center;
+      color: #fff;
+      height: 100%;
+      padding: 2rem;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
+    }
+    &:hover {
+      .sa-thumbnail-text {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// footer 
+.sa-footer-section {
+  background-color: $sa-main-color;
+  color: $white;
+  padding: 2rem rem-calc(150, 16);
+  position: sticky;
+  bottom: 0;
+  .sa-quick-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    .sa-quick-links-link {
+      border-bottom: 1px solid $white;
+      position: relative;
+      padding-left: 40px;
+      padding-bottom: 3px;
+      margin-bottom: 5px;
+      &:before {
+        content: url('../img/right-chevron.png');
+        position: absolute;
+        left: 0px;
+        top: 2px;
+      }
+      @include last-child { 
+        border: none;
+      } 
+      a {
+        color: $white;
+      }
+    }
+  }
+  .sa-info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    .sa-info-item {
+      margin-bottom: 10px;
+      .sa-info-img {
+        float: left;
+        margin: 10px 20px 0px 0px;
+        &.sa-phone-icon {
+          /* Safari */
+          -webkit-transform: rotate(45deg);
+
+          /* Firefox */
+          -moz-transform: rotate(45deg);
+
+          /* IE */
+          -ms-transform: rotate(45deg);
+
+          /* Opera */
+          -o-transform: rotate(45deg);
+
+          margin-top: 13px;
+        }
+        &.sa-envelope-icon {
+          margin-top: 0;
+        }
+      }
+      .sa-info {
+        
+      }
+    }
+  }
+}

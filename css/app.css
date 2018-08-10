@@ -153,7 +153,7 @@ html { box-sizing: border-box; font-size: 100%; }
 
 *, *::before, *::after { box-sizing: inherit; }
 
-body { margin: 0; padding: 0; background: #fefefe; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-weight: normal; line-height: 1.5; color: #0a0a0a; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { margin: 0; padding: 0; background: #fefefe; font-family: "Roboto", sans-serif, Helvetica, Roboto, Arial; font-weight: normal; line-height: 1.5; color: #0a0a0a; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 img { display: inline-block; vertical-align: middle; max-width: 100%; height: auto; -ms-interpolation-mode: bicubic; }
 
@@ -833,7 +833,7 @@ strong, b { font-weight: bold; line-height: inherit; }
 
 small { font-size: 80%; line-height: inherit; }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-style: normal; font-weight: normal; color: inherit; text-rendering: optimizeLegibility; }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-family: "Roboto", sans-serif, Helvetica, Roboto, Arial; font-style: normal; font-weight: normal; color: inherit; text-rendering: optimizeLegibility; }
 h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small { line-height: 0; color: #cacaca; }
 
 h1, .h1 { font-size: 1.5rem; line-height: 1.4; margin-top: 0; margin-bottom: 0.5rem; }
@@ -1830,6 +1830,28 @@ a.thumbnail image { box-shadow: none; }
   .large-flex-dir-row-reverse { flex-direction: row-reverse; }
   .large-flex-dir-column { flex-direction: column; }
   .large-flex-dir-column-reverse { flex-direction: column-reverse; } }
-body { background: blue; }
+.top-bar { padding: 0 6.25rem; box-shadow: 0px 5px 5px #e0e0e0; }
+.top-bar .top-bar-left li, .top-bar .top-bar-left li a { padding: 0; }
+.top-bar .top-bar-right .dropdown.menu a { padding: 2.5rem 1.5rem; color: #323032; position: relative; text-transform: uppercase; }
+.top-bar .top-bar-right .dropdown.menu a.active, .top-bar .top-bar-right .dropdown.menu a:hover { background-color: #2d75bf; color: #fefefe; }
+.top-bar .top-bar-right .dropdown.menu a:after { content: ''; height: 96px; width: 2px; border: 1px solid #c5c5c4; position: absolute; right: 0; top: 0; }
+
+.sa-thumbnail-section { padding: 5rem 3.5rem; background-color: #e8e8e8; }
+.sa-thumbnail-section .sa-thumbnail-wrapper { position: relative; cursor: pointer; }
+.sa-thumbnail-section .sa-thumbnail-wrapper .sa-thumbnail-img { width: 100%; }
+.sa-thumbnail-section .sa-thumbnail-wrapper .sa-thumbnail-text { position: absolute; top: 0; background: #2e74bfcf; text-align: center; color: #fff; height: 100%; padding: 2rem; visibility: hidden; opacity: 0; transition: visibility 0s, opacity 0.5s linear; }
+.sa-thumbnail-section .sa-thumbnail-wrapper:hover .sa-thumbnail-text { display: block; visibility: visible; opacity: 1; }
+
+.sa-footer-section { background-color: #2d75bf; color: #fefefe; padding: 2rem 9.375rem; position: sticky; bottom: 0; }
+.sa-footer-section .sa-quick-links-list { list-style: none; padding: 0; margin: 0; }
+.sa-footer-section .sa-quick-links-list .sa-quick-links-link { border-bottom: 1px solid #fefefe; position: relative; padding-left: 40px; padding-bottom: 3px; margin-bottom: 5px; }
+.sa-footer-section .sa-quick-links-list .sa-quick-links-link:before { content: url("../img/right-chevron.png"); position: absolute; left: 0px; top: 2px; }
+.sa-footer-section .sa-quick-links-list .sa-quick-links-link:last-of-type { border: none; }
+.sa-footer-section .sa-quick-links-list .sa-quick-links-link a { color: #fefefe; }
+.sa-footer-section .sa-info-list { list-style: none; padding: 0; margin: 0; }
+.sa-footer-section .sa-info-list .sa-info-item { margin-bottom: 10px; }
+.sa-footer-section .sa-info-list .sa-info-item .sa-info-img { float: left; margin: 10px 20px 0px 0px; }
+.sa-footer-section .sa-info-list .sa-info-item .sa-info-img.sa-phone-icon { /* Safari */ -webkit-transform: rotate(45deg); /* Firefox */ -moz-transform: rotate(45deg); /* IE */ -ms-transform: rotate(45deg); /* Opera */ -o-transform: rotate(45deg); margin-top: 13px; }
+.sa-footer-section .sa-info-list .sa-info-item .sa-info-img.sa-envelope-icon { margin-top: 0; }
 
 /*# sourceMappingURL=app.css.map */
